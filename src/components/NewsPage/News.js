@@ -45,7 +45,7 @@ const News = ({voicePageNavigation,setVoicePageNavigation}) => {
   const year = today.getFullYear()
   
   useEffect(()=>{
-    if(!newsinfo){
+    
       fetch(`https://newsapi.org/v2/everything?q=${search}&from=${year}-${month}-${date}&sortBy=publishedAt&apiKey=077a482d122145f1b9752f786bc91c87`)
       .then(response => {
         if(!response.ok){
@@ -63,9 +63,7 @@ const News = ({voicePageNavigation,setVoicePageNavigation}) => {
       .catch(e =>{
         setError(e.message)
       })
-    }else{
-      setNews(newsinfo)
-    }
+    
     
   },[])
   useEffect(()=>{
