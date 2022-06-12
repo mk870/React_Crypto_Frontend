@@ -52,7 +52,7 @@ const Home = ({voicePageNavigation,setVoicePageNavigation}) => {
   },[])
   useEffect(()=>{
     setNews('')
-    fetch(`https://newsapi.org/v2/everything?q=${search}&from=${year}-${month}-${date}&sortBy=publishedAt&apiKey=077a482d122145f1b9752f786bc91c87`)
+    fetch(`https://crypto-mania-server.herokuapp.com/api/news`)
     .then(response => {
       if(!response.ok){
         throw Error('Could not fetch data please check your network connection')
