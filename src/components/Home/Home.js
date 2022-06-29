@@ -87,7 +87,7 @@ const Home = ({voicePageNavigation,setVoicePageNavigation}) => {
         <div className="head">
           <h3>Global Crypto Statistics</h3>
         </div>
-        {cryptos && !error && news && <div className="grid">
+        {cryptos && !error  && <div className="grid">
           <div className="stat">
             <h4>Total Cryptocurencies</h4>
             {coinsInfo.stats.totalCoins}
@@ -110,7 +110,7 @@ const Home = ({voicePageNavigation,setVoicePageNavigation}) => {
           </div>
         </div>}
       </div>
-      {cryptos && !error && news && <div className='topcrypto'>
+      {cryptos && !error  && <div className='topcrypto'>
         <div className="head">
           <h3>Top 8 Crypto Currencies In The World</h3>
           <span onClick={()=>navigate('/cryptodashboard')}>Show more...</span>
@@ -132,7 +132,7 @@ const Home = ({voicePageNavigation,setVoicePageNavigation}) => {
           ))}
         </div>
       </div>}
-      {news && !error && coinsInfo && <div className="topnews">
+      {news && !error  && <div className="topnews">
         <div className="head">
           <h3>Top 4 Crypto Currency News In The World</h3>
           <span onClick={()=>navigate('/news')}>Show more...</span>
@@ -163,7 +163,7 @@ const Home = ({voicePageNavigation,setVoicePageNavigation}) => {
       
       </div>}
       {error && <ApiError error={error}/>}
-      {!error && !news && !cryptos && <Spinner/>}
+      {!error && (!news || !cryptos) && <Spinner/>}
     </HomeStyles>
   )
 }
