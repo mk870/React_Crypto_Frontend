@@ -5,6 +5,8 @@ export const ApiConfirmationPopupStyles = styled.div`
   justify-content:center;
   align-items:center;
   flex-direction:column;
+  position: fixed;
+  top:0%;
   width:70%;
   height: 10vh;
   border-radius:10px;
