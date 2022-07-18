@@ -3,7 +3,7 @@
 
 ## Project Summary 
 
-* This app shows the stats, historical price data and predicts future prices of bitcoin, ethereum and litecoin using a deep learning microservice.
+* This app shows the stats, historical price data and predicts future prices of crypto-currencies using a deep learning microservice.
 * The app also allows you to add and delete your crypto currencies in your own account. 
 * The app also displays the latest news on crypto currencies from major news sources.
 * Another feature is that it allows you to use voice recognition to navigate, change theme color and have the news read to you buy an AI voice.
@@ -12,8 +12,8 @@
 * Created 9 pages using react-router (homepage, news, crypto-dashboard, crypto exchanges, my-watchlist, login, voice-commands,Crypto-coin-details and signup page)
 * Used Alan-AI sdk for voice recognition and navigation.
 * Used chart js to display each coin's historical price data.
-* Spring boot Cryptomania app was used as the backend of the app.
-* Also used a custom built crypto price predictor api to predict future prices.
+* A spring-boot restful app was used as the backend of this app ([CryptoManiaServer](https://github.com/mk870/crypto-mania-api)).
+* Also used a custom built crypto price predictor api to predict future prices ([Crypto-price-predictor](https://github.com/mk870/Crypto_Deep_Learning_Api)).
 * Finally used styled-components to style the entire application.
 
 ### **Resources Used**
@@ -28,12 +28,12 @@
 
 **For Web Framework Requirements**: npm install
 
-**APIs**: Coinranking ,Context Api, [Crypto-price-predictor](https://github.com/mk870/Crypto_Deep_Learning_Api) and [CryptoManiaServer](https://github.com/mk870/crypto-mania-api) (backend) 
+**APIs**: Coinranking ,React-Context Api, [Crypto-price-predictor](https://github.com/mk870/Crypto_Deep_Learning_Api) and [CryptoManiaServer](https://github.com/mk870/crypto-mania-api) (backend) 
 
 
 
 ### **Crypto Dashboard** 
-* The dashboard has a react-alice-carousel to show each crypto currency price and % price change.
+* The dashboard has a react-alice-carousel to show each crypto currency's price and % price change.
 * It displays 100 crypto currencies using coinranking api via rapidApi service and also uses pagination.  
 
 <img src="https://i.ibb.co/syRWTXK/Crypto-Mania-2.png" alt="Crypto-Mania-2" border="0"> 
@@ -57,7 +57,7 @@
 <img src="https://i.ibb.co/HBhw3Gd/Crypto-Mania-5.png" alt="Crypto-Mania-5" border="0">  
 
 ### **News Page**  
-* This page uses [CryptoManiaServer](https://github.com/mk870/crypto-mania-api) spring-boot restful app to display the latest cryptocurrency news.
+* This page uses data from [CryptoManiaServer](https://github.com/mk870/crypto-mania-api) Api to display the latest cryptocurrency news.
 * It uses html Parser to convert html to proper readable words. 
 * Also the app can read to the user the news using alan AI sdk.  
 
