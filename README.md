@@ -2,6 +2,13 @@
 <img src="https://i.ibb.co/y4rKph5/Crypto-Mania-1.png" alt="Crypto-Mania-1" border="0">
 
 ## Project Summary 
+
+* This app shows the stats, historical price data and predicts future prices of bitcoin, ethereum and litecoin using a deep learning microservice.
+* The app also allows you to add and delete your crypto currencies in your own account. 
+* The app also displays the latest news on crypto currencies from major news sources.
+* Another feature is that it allows you to use voice recognition to navigate, change theme color and have the news read to you buy an AI voice.
+* Finally, it has market exchange and crypto currency dashboards.  
+### Project Steps :  
 * Created 9 pages using react-router (homepage, news, crypto-dashboard, crypto exchanges, my-watchlist, login, voice-commands,Crypto-coin-details and signup page)
 * Used Alan-AI sdk for voice recognition and navigation.
 * Used chart js to display each coin's historical price data.
@@ -21,20 +28,20 @@
 
 **For Web Framework Requirements**: npm install
 
-**APIs**: Coinranking ,Context Api, crypto_price_predictor Api and cryptomania server (backend) 
+**APIs**: Coinranking ,Context Api, [Crypto-price-predictor](https://github.com/mk870/Crypto_Deep_Learning_Api) and [CryptoManiaServer](https://github.com/mk870/crypto-mania-api) (backend) 
 
 
 
 ### **Crypto Dashboard** 
-* Uses react-alice-carousel to show each crypto currency price and % price change.
-* Displays 100 crypto currencies using coinranking api via rapidApi service and also uses pagination.  
+* The dashboard has a react-alice-carousel to show each crypto currency price and % price change.
+* It displays 100 crypto currencies using coinranking api via rapidApi service and also uses pagination.  
 
 <img src="https://i.ibb.co/syRWTXK/Crypto-Mania-2.png" alt="Crypto-Mania-2" border="0"> 
 
 ### **Crypto Coin Details Page**  
-* Displays a crypto coin's stats, historical data and features from coin ranking api.
-* Utilizes Chart-js to display the historical price data with the ability to change the time period of the chart.
-* Uses the crypto price predictor api to predict the price for the next 24 hrs, 3 days, 7 days and 14 days. This only applies to litecoin, Ethereum and Bitcoin.  
+* The page displays a crypto coin's stats, historical data and features from coin ranking api.
+* It utilizes Chart-js to display the historical price data with the ability to change the time period of the chart.
+* Also it uses the [Crypto-price-predictor](https://github.com/mk870/Crypto_Deep_Learning_Api) api to predict the price for the next 24 hrs, 3 days, 7 days and 14 days. This only applies to litecoin, Ethereum and Bitcoin.  
 
 <img src="https://i.ibb.co/8dTqsfx/Crypto-Mania-3.png" alt="Crypto-Mania-3" border="0"> 
 
@@ -44,20 +51,20 @@
 <img src="https://i.ibb.co/ZczGCyB/Crypto-Mania-4.png" alt="Crypto-Mania-4" border="0"> 
 
 ### **Theme Color Change Feature** 
-* Uses redux to store and change the theme color of the app.
+* This feature uses redux to store and change the theme color of the app.
 * It allows the app to have a light and dark theme which is chosen on the navbar or sidebar depending onscreen size.  
 
 <img src="https://i.ibb.co/HBhw3Gd/Crypto-Mania-5.png" alt="Crypto-Mania-5" border="0">  
 
 ### **News Page**  
-* This page uses the crypto mania spring boot app to display the latest cryptocurrency news.
+* This page uses [CryptoManiaServer](https://github.com/mk870/crypto-mania-api) spring-boot restful app to display the latest cryptocurrency news.
 * It uses html Parser to convert html to proper readable words. 
 * Also the app can read to the user the news using alan AI sdk.  
 
 <img src="https://i.ibb.co/8Mf8vqS/Crypto-Mania-6.png" alt="Crypto-Mania-6" border="0">
 
 ### **MyWatchlist Page**  
-* This page displays the client's crypto coins from the database and allows the client to delete their coins.
+* This page displays the client's crypto coins from the database and allows the client to delete their coins through the [CryptoManiaServer](https://github.com/mk870/crypto-mania-api) Api.
 
 ### **Productionization**
 In this step, I deployed the app to heroku cloud.
