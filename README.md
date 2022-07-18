@@ -54,7 +54,7 @@
 * It uses html Parser to convert html to proper readable words. 
 * Also the app can read to the user the news using alan AI sdk.  
 
-<img src="https://i.ibb.co/85Ttwvd/Crypto-Mania-6.png" alt="Crypto-Mania-6" border="0">
+<img src="https://i.ibb.co/8Mf8vqS/Crypto-Mania-6.png" alt="Crypto-Mania-6" border="0">
 
 ### **MyWatchlist Page**  
 * This page displays the client's crypto coins from the database and allows the client to delete their coins.
