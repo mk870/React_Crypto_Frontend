@@ -26,15 +26,15 @@
 
 
 ### **Crypto Dashboard** 
-* Uses react-alice-carousel to show each crypto currency prices and % price change.
-* Displays 100 crypto currencies using coinranking api via rapidApi service and used pagination.  
+* Uses react-alice-carousel to show each crypto currency price and % price change.
+* Displays 100 crypto currencies using coinranking api via rapidApi service and also uses pagination.  
 
 <img src="https://i.ibb.co/syRWTXK/Crypto-Mania-2.png" alt="Crypto-Mania-2" border="0"> 
 
 ### **Crypto Coin Details Page**  
-* Displays a crypto coin stats, historical data and features from coin ranking api.
-* Utilizes Chart js to display the historical price data with the ability to change the time period of the chart.
-* Uses the crypto price predictor api to predict price data for the next 24 hrs, 3 days, 7 days and 14 days. This only applies for litecoin, Ethereum and Bitcoin.  
+* Displays a crypto coin's stats, historical data and features from coin ranking api.
+* Utilizes Chart-js to display the historical price data with the ability to change the time period of the chart.
+* Uses the crypto price predictor api to predict the price for the next 24 hrs, 3 days, 7 days and 14 days. This only applies to litecoin, Ethereum and Bitcoin.  
 
 <img src="https://i.ibb.co/8dTqsfx/Crypto-Mania-3.png" alt="Crypto-Mania-3" border="0"> 
 
