@@ -6,7 +6,7 @@
 * This app shows the stats, historical price data and predicts future prices of crypto-currencies using a deep learning microservice.
 * The app also allows you to add and delete your crypto currencies in your own account. 
 * The app also displays the latest news on crypto currencies from major news sources.
-* Another feature is that it allows you to use voice recognition to navigate, change theme color and have the news read to you buy an AI voice.
+* Another feature is that it allows you to use voice recognition to navigate, change theme color and have the news read to you by an AI voice.
 * Finally, it has market exchange and crypto currency dashboards.  
 ### Project Steps :  
 * Created 9 pages using react-router (homepage, news, crypto-dashboard, crypto exchanges, my-watchlist, login, voice-commands,Crypto-coin-details and signup page)
